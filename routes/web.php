@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',"Main@index");
+
+//login
+Route::get('/login', "User@login");
+
+
+Route::get('/firebase',"FirebaseController@connection");
