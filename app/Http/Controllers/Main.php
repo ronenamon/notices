@@ -6,13 +6,20 @@ use Illuminate\Http\Request;
 
 class Main extends Controller
 {
+
+    // www.****.com/
     public function index()
     {
         
         if(isset($_SESSION['user_login'])){
             return view('welcome');
         }else{
-            echo "you must login first";
+            return redirect("login");
         }
+
+
+
+
+        
     }
 }

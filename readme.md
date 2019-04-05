@@ -2,7 +2,7 @@
 
 <p align="center">notices projects</p>
 
-<h2> author Ronen Amon </h2>
+## author Ronen Amon
 
 ## build with :
 

@@ -15,6 +15,7 @@ Route::get('/',"Main@index");
 
 //login
 Route::get('/login', "User@login");
+Route::post('/login', "User@login_proccess");
 
 
 Route::get('/firebase',"FirebaseController@connection");
