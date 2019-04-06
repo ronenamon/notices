@@ -18,7 +18,7 @@ class User extends Controller
 
     public function login()
     {
-        return View("login");   
+        return View("\login");
     }
 
     public function login_proccess(Request $request)
@@ -36,12 +36,12 @@ class User extends Controller
                 return redirect('/');
             }
         }else{
-            return View("login")->with("errors",$errors);   
+            return View("\login")->with("errors",$errors);
         }
 
       }else{
           
-        return View("login");
+        return View("\login");
       } 
         
     }

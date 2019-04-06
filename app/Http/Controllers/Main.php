@@ -14,7 +14,7 @@ class Main extends Controller
         if(isset($_SESSION['user_login'])){
             return view('welcome');
         }else{
-            return redirect("login");
+            return redirect("\login");
         }
 
 
